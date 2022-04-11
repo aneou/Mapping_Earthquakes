@@ -38,7 +38,7 @@ let overlays = {
 };
 
   // Pass our map layers into our layers control and add the layers control to the map.
-L.control.layers(baseMaps).addTo(map);
+L.control.layers(baseMaps, overlays).addTo(map);
 
 // This function determines the radius of the earthquake marker based on its magnitude.
 // Earthquakes with a magnitude of 0 will be plotted with a radius of 1.
